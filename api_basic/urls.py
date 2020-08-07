@@ -13,7 +13,6 @@ router.register('article', ArticleViewSet,
 urlpatterns = [
     path('viewset/', include(router.urls)),
 
-
     #path('article/', article_list), #api view
     path('article/', ArticleAPIView.as_view()), #class based api views 
     #path('detail/<int:pk>/', article_detail), #api view
